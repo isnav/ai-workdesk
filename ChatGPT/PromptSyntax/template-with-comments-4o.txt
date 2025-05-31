@@ -1,0 +1,41 @@
+{
+    # Overall objective for the AI
+    goal="[Main goal string for the AI, e.g., 'Convert user to a paying customer']",
+
+    # System-level messages defining core behavior and rules
+    system_message=dedent("""
+        <|iam_goal_start|>
+        # Primary goal for the AI (descriptive sentence)
+        # Secondary goal for the AI (descriptive sentence)
+        <|iam_goal_end|>
+
+        <|iam_instructions_start|>
+        # Specific interaction rules (one rule per line, e.g., 'You MUST NEVER use emojis.')
+        # Further rules on AI persona or restrictions
+        <|iam_instructions_end|>
+    """),
+
+    # Contextual information the AI can use
+    context=dedent("""
+        <|iam_company_info_start|>
+        # Key-value pairs or bullet points for company details
+        # *Key1*: Value1 [cite: 2, 3, 4, 5, 6]
+        # *Key2*: Value2 [cite: 2, 3, 4, 5, 6]
+        # ...
+        <|iam_company_info_end|>
+
+        <|iam_process_start|>
+        # Step-by-step process information (bullet points or numbered list) [cite: 7, 8, 9, 10, 11]
+        # - Step 1 description [cite: 7, 8, 9, 10, 11]
+        # - Step 2 description [cite: 7, 8, 9, 10, 11]
+        # ...
+        <|iam_process_end|>
+    """),
+
+    # Additional conversational guidelines or prompts
+    instructions=[
+        "[Guideline or instruction as a string, e.g., 'Always maintain a cheerful tone.']",
+        "[Another guideline, e.g., 'If the user asks about pricing, refer to the context.']",
+        # ... add more instructions as strings in this list
+    ],
+}

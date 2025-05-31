@@ -1,0 +1,27 @@
+{
+    goal="",
+
+    system_message=dedent("""
+        <|iam_goal_start|>
+
+        <|iam_goal_end|>
+
+        <|iam_instructions_start|>
+
+        <|iam_instructions_end|>
+    """),
+
+    context=dedent("""
+        <|iam_persona_info_start|>
+
+        <|iam_persona_info_end|>
+
+        <|iam_knowledge_base_start|>
+
+        <|iam_knowledge_base_end|>
+    """),
+
+    instructions=[
+        "",
+    ],
+}

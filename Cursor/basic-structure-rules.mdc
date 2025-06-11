@@ -1,0 +1,50 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+## Cursor Rule: Web Dev Best Practices
+
+### Purpose
+Maintain clean, scalable, accessible HTML/CSS/JS code across web projects.
+
+---
+
+### ✅ File Organisation
+- Store code in clearly separated folders:
+  - `/css/` – All stylesheets
+  - `/js/` – JavaScript files
+  - `/assets/` – Images, fonts, etc.
+  - `/components/` – Reusable HTML sections
+- Use kebab-case and lowercase for file and folder names
+- **Do not use inline styles in HTML** – keep all CSS in external stylesheets
+
+---
+
+### ✅ CSS Variables and Reusability
+- Use `:root` for CSS variables in a dedicated file (e.g., `variables.css`)
+- Avoid hardcoded values; use variables for:
+  - Colors (`--primary-color`)
+  - Spacing (`--spacing-sm`, `--spacing-lg`)
+  - Typography (`--font-base`, `--line-height`) 
+- Use `rem` or `%` for sizing instead of `px`
+- Break CSS into modules and import into a main stylesheet
+- **Never use inline styles**
+
+---
+
+### ✅ Web Standards and Compatibility
+- Start all HTML files with `<!DOCTYPE html>`
+- Use semantic HTML5 tags (`<main>`, `<nav>`, `<section>`, etc.)
+- Set `<html lang="en">` and include meta tags:
+  - `<meta charset="UTF-8">`
+  - `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+- Ensure ARIA labels and roles are used where needed
+- Avoid user-agent sniffing; use feature detection instead
+
+---
+
+### ⛔️ Disallowed
+- Inline CSS styles in HTML
+- Magic numbers or strings in JS – use constants/config objects
+- Overly nested folder structures or vague filenames

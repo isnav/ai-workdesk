@@ -1,0 +1,59 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Rule: Brainstorming topics to create new content (Braindump)
+
+## Goal
+
+To guide an AI assistant in collecting comprehensive thoughts behind a topic from the users initial prompt. The Braindump should be clear, organised in structured manner and suitable for a young person to read.
+
+## Process
+
+1.  **Receive Initial Prompt:** The user provides a brief description or title of the topic they have in mind.
+2.  **Ask Clarifying Questions:** Before writing the Braindump, the AI *must* ask clarifying questions to gather sufficient detail. The goal is to understand the "what" and "why" behind the topic.
+3.  **Generate Braindump:** Based on the initial prompt and the user's answers to the clarifying questions, generate a Braindump using the structure outlined below.
+4.  **Save Braindump:** Save the generated document as `Braindump.md` inside the same directory.
+
+## Clarifying Questions (Examples)
+
+The AI should adapt its questions based on the prompt, but here are some common areas to explore:
+
+*   **Problem/Goal/Story:** "What is the  does this feature solve for the user?" or "What is the main goal we want to achieve with this feature?"
+*   **Target Audience:** "Who is the primary audience for this content?"
+*   **Key Takeaways:** "Can you describe the key takeaways a reader should be able to understand from this content?"
+*   **User Stories:** "Could you provide a few user stories? (e.g., As a [type of user], I want to [perform an action] so that [benefit].)"
+*   **Acceptance Criteria:** "How will we know when this feature is successfully implemented? What are the key success criteria?"
+*   **Scope/Boundaries:** "Are there any specific things this feature *should not* do (non-goals)?"
+*   **Data Requirements:** "What kind of data does this feature need to display or manipulate?"
+*   **Design/UI:** "Are there any existing design mockups or UI guidelines to follow?" or "Can you describe the desired look and feel?"
+*   **Edge Cases:** "Are there any potential edge cases or error conditions we should consider?"
+
+## Braindump Structure
+
+1. **Overview:** Briefly describe the topic and why it's worth writing about. State the core idea or argument.
+2. **Goals:** List the intended outcomes or objectives of this piece (e.g., inform, persuade, provoke thought, share experience).
+3. **Target Audience:** Define who this is for, why it matters to them, and what need or interest it serves.
+4. **Key Insights:** Outline the core insight, shift in perspective, or takeaway you want to deliver.
+5. **Content Outline:** Break down the structure of the piece. This can be a rough list of sections, beats, or arguments.
+6. **Stories & Examples:** List relevant anecdotes, analogies, or real-world examples that will support or illustrate your points.
+7. **Tone & Style Considerations:** Describe the desired tone (e.g., casual, expert, reflective) and any stylistic preferences or constraints.
+8. **Evidence & Sources (Optional):** List supporting data, quotes, references, or frameworks you plan to include.
+9. **Raw Content Dump:** A more detailed, unfiltered version of all the ideas, thoughts, or story fragments shared. This should capture the user's original voice, loosely structured and minimally edited.
+
+## Target Audience
+
+Assume the primary reader of the content is an experienced copy writer with good grasp of english, but someone who appreciates clear language.
+
+## Output
+
+*   **Format:** Markdown (`.md`)
+*   **Location:** ``
+*   **Filename:** `Braindump.md`
+
+## Final instructions
+
+1. Always prioritize depth and clarity.
+2. Don't suggest structure or next steps unless asked.
+3. Only collect. Don’t edit. Don’t summarize.

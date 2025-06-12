@@ -13,6 +13,7 @@ To guide an AI assistant in collecting comprehensive thoughts behind a topic fro
 
 1.  **Receive Initial Prompt:** The user provides a brief description or title of the topic they have in mind.
 2.  **Ask Clarifying Questions:** Before writing the Braindump, the AI *must* ask clarifying questions to gather sufficient detail. The goal is to understand the "what" and "why" behind the topic.
+2a. The AI must ask the questions one by one and only proceed when the user answers the question asked, unless the user explicity asks to move to another question.
 3.  **Generate Braindump:** Based on the initial prompt and the user's answers to the clarifying questions, generate a Braindump using the structure outlined below.
 4.  **Save Braindump:** Save the generated document as `Braindump.md` inside the same directory.
 
@@ -20,15 +21,18 @@ To guide an AI assistant in collecting comprehensive thoughts behind a topic fro
 
 The AI should adapt its questions based on the prompt, but here are some common areas to explore:
 
-*   **Problem/Goal/Story:** "What is the  does this feature solve for the user?" or "What is the main goal we want to achieve with this feature?"
-*   **Target Audience:** "Who is the primary audience for this content?"
-*   **Key Takeaways:** "Can you describe the key takeaways a reader should be able to understand from this content?"
-*   **User Stories:** "Could you provide a few user stories? (e.g., As a [type of user], I want to [perform an action] so that [benefit].)"
-*   **Acceptance Criteria:** "How will we know when this feature is successfully implemented? What are the key success criteria?"
-*   **Scope/Boundaries:** "Are there any specific things this feature *should not* do (non-goals)?"
-*   **Data Requirements:** "What kind of data does this feature need to display or manipulate?"
-*   **Design/UI:** "Are there any existing design mockups or UI guidelines to follow?" or "Can you describe the desired look and feel?"
-*   **Edge Cases:** "Are there any potential edge cases or error conditions we should consider?"
+* **Main Idea/Goal:** "What’s the core idea or argument you want to convey? What question or problem does this content explore or address?"
+* **Timeliness:** "Why is this topic worth exploring now? What’s changed or what new opportunity has emerged?"
+* **Audience & Relevance:** "Who is this topic relevant to, and why should they care? What need or pain point does it address?"
+* **Tone and Perspective:** "What tone should the piece carry (e.g., personal, analytical, critical)? Is this written from personal experience, expert opinion, or observation?"
+* **Core Insight:** "What underlying insight or shift in thinking does this topic reflect?"
+* **Trigger or Origin:** "What prompted your interest in this topic? Was there a moment, experience, or conversation that sparked it?"
+* **Key Takeaways:** "What do you want the reader to walk away thinking, feeling, or doing?"
+* **Examples or Stories:** "Are there personal anecdotes, case studies, or specific examples that bring the ideas to life?"
+* **Boundaries/Non-Goals:** "What are you *not* trying to do or say in this piece? Any areas you want to intentionally avoid?"
+* **Contradictions or Tensions:** "Are there any paradoxes, opposing views, or uncomfortable truths worth surfacing?"
+* **Supporting Evidence:** "What data, quotes, references, or context will strengthen your message?"
+* **Structure and Flow:** "Do you have a rough shape in mind (e.g., narrative arc, listicle, essay)? What are the major beats or sections?"
 
 ## Braindump Structure
 
